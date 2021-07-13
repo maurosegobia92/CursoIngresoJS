@@ -1,25 +1,27 @@
+/*
+AUTOR:Mauro Nahuel Segobia.
+ENUNCIADO:Introducción IF, Ejerecicio 6.
+
+*/
 function mostrar()
 {
-	var edadIngresada;
-	var adolecente;
-	var adulto;
-	edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
-	if(edadIngresada>=18){
-		adulto=edadIngresada>=18;
-		alert("Usted es mayor de edad");
+	
+var edadIngresada;
+edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
 
-	}
+if(edadIngresada>=18){
 
-	if(edadIngresada>=13&&edadIngresada<=17){
-		adolecente=edadIngresada>=13&&edadIngresada<=17;
-		alert("Usted es un adolecente");
+	alert("Usted es mayor de edad");
+}
+else if(edadIngresada>13){
+	alert("Usted es un adolecente");
+}
 
-	}
 
-	if(!adolecente&&!adulto){
-		alert("Usted es un niño");
-		
-	}
+else {
+alert("Usted es un niño");
+
+}
 
 
 

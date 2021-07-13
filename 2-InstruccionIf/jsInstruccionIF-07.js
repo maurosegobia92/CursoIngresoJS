@@ -1,15 +1,17 @@
+/*
+AUTOR:Mauro Nahuel Segobia.
+ENUNCIADO:Introducción IF, Ejerecicio 7.
+
+*/
 function mostrar()
 {
 	var edadIngresada;
-	var estadoCivil;
-	var soltero;
-	var casado;
-	var divorciado;
+	var estadoCivilIngresado;
 	edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
-	document.getElementById("estadoCivil").value=estadoCivil;
-	if(estadoCivil!soltero){
-		alert("Es muy pequeño para NO ser soltero.");
-		
+	document.getElementById("estadoCivil").value=estadoCivilIngresado;
+	if (edadIngresada<18&&estadoCivilIngresado!="Soltero"){
+		alert("Es muy pequeño para no ser soltero");
+
 	}
 	
 	
