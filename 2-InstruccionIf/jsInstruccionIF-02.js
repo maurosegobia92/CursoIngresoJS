@@ -1,19 +1,20 @@
 /*
 AUTOR:Mauro Nahuel Segobia.
 ENUNCIADO:Introducción IF, Ejerecicio 2.
-
+Enunciado:
+Al ingresar una edad debemos informar solo si la persona es mayor de edad
 */
 function mostrar()
 {
-	var edadIngresada;
-	edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
-	if(edadIngresada>=18){
+	var edad;
+	edad=document.getElementById("txtIdEdad").value;
+	if(edad>=18)
+	{
 		alert("Usted es mayor de edad");
-
-
-
 	}
+	 
+
+
 
 	
-	
-	}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN

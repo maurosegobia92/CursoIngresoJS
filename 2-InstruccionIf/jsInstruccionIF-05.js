@@ -1,19 +1,19 @@
 /*
 AUTOR:Mauro Nahuel Segobia.
 ENUNCIADO:Introducción IF, Ejerecicio 5.
+Enunciado:
+Al ingresar una edad solo debemos informar si la persona NO es adolescente.
 
 */
 function mostrar()
 {
-	var edadIngresada;
-	var adolecente;
-	edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
-	adolecente=edadIngresada>=13&&edadIngresada<=17;
-	if(edadIngresada!=adolecente){
-		alert("Usted no es un adolecente");
-
+	var edad;
+	edad=document.getElementById("txtIdEdad").value;
+	if(edad<13||edad>17)
+	{
+		alert("Usted no es adolecente.");
 	}
-
+	
 	
 
 

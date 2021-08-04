@@ -1,18 +1,21 @@
 /*
 AUTOR:Mauro Nahuel Segobia.
 ENUNCIADO:Introducción IF, Ejerecicio 8.
+Enunciado:
+Al ingresar una edad menor a 18 años y un estado civil distinto a "Soltero", NO HACER NADA,
+pero si no es asi, y es soltero y no es menor, mostrar el siguiente mensaje: 'Es soltero y no es menor.'
 
 */
 function mostrar()
 {
-	var edadIngresada;
-	var estadoCivilIngresado;
-	edadIngresada=parseInt(document.getElementById("txtIdEdad").value);
-	estadoCivilIngresado=document.getElementById("estadoCivil").value;
-	if(estadoCivilIngresado=="Soltero"&&edadIngresada>=18){
-		alert("Es soltero y no es menor.");
+	var edad;
+	var estadoCivil;
+	edad=document.getElementById("txtIdEdad").value;
+	estadoCivil=document.getElementById("estadoCivil").value;
 
-
+	if(estadoCivil=="Soltero"&&edad>18)
+	{
+		alert("Es soltero y no es menor.")
 	}
 
 	
