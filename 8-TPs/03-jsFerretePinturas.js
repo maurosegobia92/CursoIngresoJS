@@ -9,14 +9,14 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 function FahrenheitCentigrados () 
 {
     var temperaturaFarenheitIngresada;
-    var centigrados;
+    var gradosCentigrados;
 
     
     temperaturaFarenheitIngresada = document.getElementById("txtIdTemperatura").value;
     temperaturaFarenheitIngresada = parseFloat(temperaturaFarenheitIngresada);
-    centigrados = (temperaturaFarenheitIngresada - 32) * 5/9;
+    gradosCentigrados = (temperaturaFarenheitIngresada - 32) * 5/9;
 
-    alert(temperaturaFarenheitIngresada+" grados Farenheit son "+centigrados+" grados centigrados");
+    alert(temperaturaFarenheitIngresada+" grados Farenheit son "+gradosCentigrados+" grados centigrados");
 
 }
 
