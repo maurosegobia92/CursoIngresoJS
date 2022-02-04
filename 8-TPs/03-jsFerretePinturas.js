@@ -26,6 +26,7 @@ function CentigradosFahrenheit ()
     var gradosFarenheit;
 
     temperaturaCentigradosIngresada = document.getElementById("txtIdTemperatura").value;
+    temperaturaCentigradosIngresada = parseFloat(temperaturaCentigradosIngresada);
     gradosFarenheit = (temperaturaCentigradosIngresada * 9/5) + 32;
 
     alert(temperaturaCentigradosIngresada+" grados centigrados son "+gradosFarenheit+" grados Farenheit");
